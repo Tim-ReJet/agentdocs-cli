@@ -16,7 +16,7 @@ export async function runAdd(name: string, opts: AddOptions): Promise<number> {
   const lines = [
     "Registry integration coming soon.",
     `For now: run \`agentdocs init ${name}\` to scaffold a new pack locally.`,
-    "See https://github.com/biroai/agentdocs for roadmap.",
+    "See https://github.com/Tim-ReJet/agentdocs-cli for roadmap.",
   ];
   if (opts.json) {
     printJson({

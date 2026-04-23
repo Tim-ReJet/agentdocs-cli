@@ -69,7 +69,7 @@ Schemas and validators live in [`@biroai/agentdocs`](https://www.npmjs.com/packa
 - **`agentdocs init --from-mcp <endpoint>`** — scaffold from an MCP server's tool list.
 - **Markdown playbook validation** — v1 only validates YAML DAG playbooks; markdown playbooks are displayed as-is.
 
-See [github.com/biroai/agentdocs](https://github.com/biroai/agentdocs) for the full spec and roadmap.
+See [github.com/Tim-ReJet/agentdocs-cli](https://github.com/Tim-ReJet/agentdocs-cli) for the roadmap, and [`@biroai/agentdocs` on npm](https://www.npmjs.com/package/@biroai/agentdocs) for the spec schemas.
 
 ## License
 

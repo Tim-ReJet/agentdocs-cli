@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "description": "Portable, structured documentation that AI agents can actually use. CLI for the AgentDocs format — brief.md + tasks.yaml + playbooks/.",
   "license": "MIT",
-  "homepage": "https://github.com/biroai/agentdocs",
-  "bugs": "https://github.com/biroai/agentdocs/issues",
+  "homepage": "https://github.com/Tim-ReJet/agentdocs-cli",
+  "bugs": "https://github.com/Tim-ReJet/agentdocs-cli/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/biroai/agentdocs.git"
+    "url": "git+https://github.com/Tim-ReJet/agentdocs-cli.git"
   },
   "keywords": [
     "agentdocs",
