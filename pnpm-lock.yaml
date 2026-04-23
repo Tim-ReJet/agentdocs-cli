@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@biroai/agentdocs':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.0
+        version: 0.2.0
       commander:
         specifier: ^12.1.0
         version: 12.1.0
@@ -39,8 +39,8 @@ importers:
 
 packages:
 
-  '@biroai/agentdocs@0.1.0':
-    resolution: {integrity: sha512-9EsfknQB/yo91NFrTSUEDPBtmuxz32sDLgmGCnxShjkVT95GC5oRmVmp0AUD+DoNim9qBXCX+2CR73Ed/4mO7Q==}
+  '@biroai/agentdocs@0.2.0':
+    resolution: {integrity: sha512-wvgARHVC9QSf0QieYDx3/kuzUGXpzB0ZAl/oNLea5fnF7VLVYBwkn+l6HbGxVSCgKuNligam6RCB7N+h7xVVbQ==}
 
   '@esbuild/aix-ppc64@0.27.7':
     resolution: {integrity: sha512-EKX3Qwmhz1eMdEJokhALr0YiD0lhQNwDqkPYyPhiSwKrh7/4KRjQc04sZ8db+5DVVnZ1LmbNDI1uAMPEUBnQPg==}
@@ -627,8 +627,9 @@ packages:
 
 snapshots:
 
-  '@biroai/agentdocs@0.1.0':
+  '@biroai/agentdocs@0.2.0':
     dependencies:
+      yaml: 2.8.3
       zod: 3.25.76
 
   '@esbuild/aix-ppc64@0.27.7':

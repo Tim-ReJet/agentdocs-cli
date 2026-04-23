@@ -1,6 +1,6 @@
 {
   "name": "@biroai/agentdocs-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Portable, structured documentation that AI agents can actually use. CLI for the AgentDocs format — brief.md + tasks.yaml + playbooks/.",
   "license": "MIT",
   "homepage": "https://github.com/Tim-ReJet/agentdocs-cli",
@@ -39,7 +39,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@biroai/agentdocs": "^0.1.0",
+    "@biroai/agentdocs": "^0.2.0",
     "commander": "^12.1.0",
     "picocolors": "^1.1.1",
     "yaml": "^2.6.1",
