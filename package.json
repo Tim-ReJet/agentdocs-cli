@@ -1,0 +1,54 @@
+{
+  "name": "agentdocs",
+  "version": "0.1.0",
+  "description": "Portable, structured documentation that AI agents can actually use. CLI for the AgentDocs format — brief.md + tasks.yaml + playbooks/.",
+  "license": "MIT",
+  "homepage": "https://github.com/biroai/agentdocs",
+  "bugs": "https://github.com/biroai/agentdocs/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biroai/agentdocs.git"
+  },
+  "keywords": [
+    "agentdocs",
+    "ai-agents",
+    "ai-coding-agents",
+    "documentation",
+    "claude-code",
+    "cursor",
+    "mcp",
+    "cli"
+  ],
+  "type": "module",
+  "bin": {
+    "agentdocs": "./dist/index.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@biroai/agentdocs": "^0.1.0",
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1",
+    "yaml": "^2.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,33 @@
+tool: stripe
+version: "2024-11-20"
+type: api
+description: Stripe payments REST API.
+homepage: https://stripe.com/docs/api
+actions:
+  - name: create-charge
+    description: Charge a credit card and capture funds immediately.
+    method: POST
+    path: /v1/charges
+    params:
+      - name: amount
+        type: number
+        required: true
+        description: Amount in the smallest currency unit (cents for USD).
+      - name: currency
+        type: string
+        required: true
+        values: [usd, eur, gbp]
+      - name: source
+        type: string
+        required: true
+        description: Token of the card or customer to charge.
+    returns:
+      type: object
+      description: The created Charge object.
+    errors:
+      - code: card_declined
+        description: The card was declined by the issuer.
+        fix: Prompt the user to try a different payment method.
+    solves:
+      - "Take a one-time payment"
+    playbook: playbooks/create-charge.md
