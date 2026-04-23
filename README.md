@@ -7,7 +7,7 @@ Think of it as `npm` or `cargo`, but for AI-agent-consumable tool docs. Your rep
 ## Install
 
 ```bash
-npm install -g agentdocs
+npm install -g @biroai/agentdocs-cli
 ```
 
 Or use it with `pnpm dlx` / `npx`:

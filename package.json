@@ -1,5 +1,5 @@
 {
-  "name": "agentdocs",
+  "name": "@biroai/agentdocs-cli",
   "version": "0.1.0",
   "description": "Portable, structured documentation that AI agents can actually use. CLI for the AgentDocs format — brief.md + tasks.yaml + playbooks/.",
   "license": "MIT",
