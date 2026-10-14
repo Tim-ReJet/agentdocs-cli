@@ -13,7 +13,7 @@ npm install -g @biroai/agentdocs-cli
 Or use it with `pnpm dlx` / `npx`:
 
 ```bash
-pnpm dlx agentdocs init stripe
+pnpm dlx @biroai/agentdocs-cli init stripe
 ```
 
 ## Quickstart

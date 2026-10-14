@@ -10,6 +10,7 @@
  *
  * Root flags: --version, --help, --json.
  */
+import { createRequire } from "node:module";
 import { Command } from "commander";
 import type { ToolType } from "@biroai/agentdocs";
 import { runInit } from "./commands/init.js";
@@ -17,7 +18,9 @@ import { runValidate } from "./commands/validate.js";
 import { runPreview } from "./commands/preview.js";
 import { runAdd } from "./commands/add.js";
 
-const VERSION = "0.1.0";
+// Read the version from the manifest so it cannot drift from the release.
+const require = createRequire(import.meta.url);
+const VERSION = (require("../package.json") as { version: string }).version;
 
 interface RootOpts {
   json?: boolean;
